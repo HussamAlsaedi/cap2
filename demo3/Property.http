@@ -1,0 +1,45 @@
+
+###
+
+GET http://localhost:8080/api/v1/properties/get-all-properties
+
+###
+
+DELETE localhost:8080/api/v1/properties/delete-property/10
+
+###
+
+ 
+
+POST http://localhost:8080/api/v1/owners/add-owner
+Authorization: Basic username password
+Content-Type: application/json
+
+{
+  "owner_name": "John Doe",
+  "owner_email": "john.doe@example.com",
+  "owner_password": "12345678"
+}
+
+###
+
+
+
+
+###
+
+PUT localhost:8080/api/v1/properties/Update-property/1
+Content-Type: application/json
+
+{
+  "property_location": "New Cairo",
+  "property_price": 1500000,
+  "property_type": "فيلا",
+  "property_area": 250.5,
+  "property_isRented": false,
+  "property_description": "Luxury villa with a garden and pool.",
+  "property_ownerId": 1
+}
+
+
+###
